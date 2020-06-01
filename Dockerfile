@@ -41,5 +41,5 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 # standard port
 EXPOSE 8529
-CMD ["arangod -c /etc/arangodb3/arangod.conf"]
+CMD ["/usr/local/sbin/arangod -c /etc/arangodb3/arangod.conf"]
 
