@@ -5,7 +5,7 @@ ENV ARANGO_VERSION 3.4.10
 #ENV GITHUB_URL https://github.com/omert08/arangodb-arm64/blob/master
 ENV GITHUB_URL https://github.com/omert08/arangodb-arm64/raw/master
 RUN apt-get update && \
-    apt-get install -y libssl-dev libjemalloc-dev wget
+    apt-get install -y libssl-dev libjemalloc-dev wget libatomic1
 
 
 #RUN mkdir /home/arangodb
@@ -41,5 +41,5 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 # standard port
 EXPOSE 8529
-CMD ["/usr/local/sbin/arangod -c /etc/arangodb3/arangod.conf"]
+CMD ["arangod -c /etc/arangodb3/arangod.conf"]
 
