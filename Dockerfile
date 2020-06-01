@@ -16,6 +16,7 @@ RUN wget -q ${GITHUB_URL}/docker-entrypoint.sh
 
 RUN tar xzvf ${ARANGO_VERSION}.tar.gz
 RUN mv ${ARANGO_VERSION}/arangod /usr/local/sbin/
+RUN mv ${ARANGO_VERSION}/arango-init-database /usr/sbin/
 
 RUN mkdir -p /etc/arangodb3
 
