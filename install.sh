@@ -22,4 +22,6 @@ mv ./$ARANGO_VERSION/share/* /usr/share/arangodb3/
 
 mv ./$ARANGO_VERSION/bin/* /usr/bin/
 
+rm $ARANGO_VERSION.tar.gz
+rm -r ./$ARANGO_VERSION
 
