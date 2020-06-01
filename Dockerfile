@@ -8,8 +8,8 @@ RUN apt-get update && \
     apt-get install -y libssl-dev libjemalloc-dev wget
 
 
-RUN mkdir /home/arangodb
-WORKDIR /home/arangodb
+#RUN mkdir /home/arangodb
+#WORKDIR /home/arangodb
 
 RUN wget -q ${GITHUB_URL}/${ARANGO_VERSION}.tar.gz 
 RUN wget -q ${GITHUB_URL}/entrypoint.sh
