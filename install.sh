@@ -4,9 +4,6 @@ ARANGO_VERSION=3.4.10
 #ENV GITHUB_URL https://github.com/omert08/arangodb-arm64/blob/master
 GITHUB_URL=https://github.com/omert08/arangodb-arm64/raw/master
 
-apt-get update
-apt-get install -y libssl-dev libjemalloc-dev wget libatomic1
-
 wget -q $GITHUB_URL/$ARANGO_VERSION.tar.gz
 wget -q $GITHUB_URL/docker-entrypoint.sh
 
