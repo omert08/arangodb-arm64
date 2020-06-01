@@ -12,7 +12,7 @@ RUN apt-get update && \
 #WORKDIR /home/arangodb
 
 RUN wget -q ${GITHUB_URL}/${ARANGO_VERSION}.tar.gz 
-RUN wget -q ${GITHUB_URL}/entrypoint.sh
+RUN wget -q ${GITHUB_URL}/docker-entrypoint.sh
 
 RUN tar xzvf ${ARANGO_VERSION}.tar.gz
 RUN mv ${ARANGO_VERSION}/arangod /usr/local/sbin/
