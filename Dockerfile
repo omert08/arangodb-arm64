@@ -34,6 +34,8 @@ VOLUME ["/var/lib/arangodb3", "/var/lib/arangodb3-apps"]
 
 RUN cp entrypoint.sh /entrypoint.sh
 
+RUN ["chmod", "+x", "/entrypoint.sh"]
+
 ENTRYPOINT ["/entrypoint.sh"]
 
 # standard port
