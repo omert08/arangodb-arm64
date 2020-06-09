@@ -19,9 +19,10 @@ This docker image supports following arangodb versions :
 	
 ## Run 
 ```
-// Run
 $ docker run -p 8529:8529 omert08/arangodb-arm64
-// Run with persistent data
+```
+## Run with persistent data
+```
 $ mkdir /tmp/arangodb
 $ docker run -p 8529:8529 -v /tmp/arangodb:/var/lib/arangodb3 omert08/arangodb-arm64 
 ```
