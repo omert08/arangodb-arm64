@@ -9,7 +9,7 @@
 ## Quick Reference
 * Docker hub url : https://hub.docker.com/r/omert08/arangodb-arm64
 * Maintained by : omert08
-* Where to get help: [Open an issue](https://github.com/omert08/arangodb-arm64/issues/new) or [email me](mailto:tabanyazilim@gmail.com).
+* Where to get help: Open an issue or email me.
 
 ## General Info
 This docker image enables developes to run ArangoDB on ARM64V8 architecture. 
