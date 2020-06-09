@@ -1,9 +1,10 @@
-~~~markdown
+```markdown
 ## Table of contents
-* [Quick Reference](#quick-reference)
-* [General info](#general-info)
-* [Supported ArangoDB Versions](#arangodb_versions)
-* [Run](#run)
+* Quick Reference
+* General info
+* Supported ArangoDB Versions
+* Run 
+* Known Issues
 
 ## Quick Reference
 * Docker hub url : https://hub.docker.com/r/omert08/arangodb-arm64
@@ -18,16 +19,14 @@ This docker image supports following arangodb versions :
 * ArangoDB 3.4.10
 	
 ## Run 
-```
 $ docker run -p 8529:8529 omert08/arangodb-arm64
-```
+
 ## Run with persistent data
-```
 $ mkdir /tmp/arangodb
 $ docker run -p 8529:8529 -v /tmp/arangodb:/var/lib/arangodb3 omert08/arangodb-arm64 
-```
+
 ## Known Issues
 * Official entrypoint integration is missing, environmental variables like ARANGO_RANDOM_ROOT_PASSWORD will not work. 
 (*Not: You can set root password after running arangodb docker instance. )
-~~~
+```
 
